@@ -1,0 +1,51 @@
+{
+  "header": {
+    "title": "Inicializador Robot Framework",
+    "documentation": "Documentação",
+    "github": "GitHub"
+  },
+  "main": {
+    "description": "Gere um novo projeto Robot Framework com suas bibliotecas e configurações selecionadas."
+  },
+  "metadata": {
+    "title": "Metadados do Projeto",
+    "projectName": "Nome do Projeto",
+    "description": "Descrição"
+  },
+  "versions": {
+    "title": "Configurações do Projeto",
+    "pythonVersion": "Versão do Python",
+    "robotVersion": "Versão do Robot Framework"
+  },
+  "dependencies": {
+    "title": "Dependências",
+    "search": "Buscar Bibliotecas",
+    "searchPlaceholder": "Busque por nome ou descrição...",
+    "filterByTag": "Filtrar por Tag",
+    "allTags": "Todas as Tags",
+    "noResults": "Nenhuma biblioteca corresponde aos critérios de busca.",
+    "builtIn": "Nativa",
+    "showDetails": "Mostrar detalhes",
+    "hideDetails": "Ocultar detalhes",
+    "dependencies": "Dependências",
+    "conflictsWith": "Conflita com",
+    "incompatibleWith": "Incompatível com",
+    "versions": "Versões disponíveis",
+    "selectVersion": "Selecionar Versão",
+    "latest": "Mais recente",
+    "conflictWarning": "Esta biblioteca tem conflitos com outras bibliotecas selecionadas",
+    "incompatibleError": "Esta biblioteca é incompatível com uma ou mais bibliotecas selecionadas"
+  },
+  "generate": {
+    "title": "Gerar Projeto",
+    "button": "Gerar Projeto",
+    "generating": "Gerando..."
+  },
+  "summary": {
+    "title": "Resumo do Projeto",
+    "name": "Nome",
+    "python": "Python",
+    "robotFramework": "Robot Framework",
+    "libraries": "Bibliotecas"
+  }
+}

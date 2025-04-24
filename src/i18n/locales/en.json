@@ -1,0 +1,51 @@
+{
+  "header": {
+    "title": "Robot Framework Initializer",
+    "documentation": "Documentation",
+    "github": "GitHub"
+  },
+  "main": {
+    "description": "Generate a new Robot Framework project with your selected libraries and configuration."
+  },
+  "metadata": {
+    "title": "Project Metadata",
+    "projectName": "Project Name",
+    "description": "Description"
+  },
+  "versions": {
+    "title": "Project Settings",
+    "pythonVersion": "Python Version",
+    "robotVersion": "Robot Framework Version"
+  },
+  "dependencies": {
+    "title": "Dependencies",
+    "search": "Search Libraries",
+    "searchPlaceholder": "Search by name or description...",
+    "filterByTag": "Filter by Tag",
+    "allTags": "All Tags",
+    "noResults": "No libraries match your search criteria.",
+    "builtIn": "Built-in",
+    "showDetails": "Show details",
+    "hideDetails": "Hide details",
+    "dependencies": "Dependencies",
+    "conflictsWith": "Conflicts with",
+    "incompatibleWith": "Incompatible with",
+    "versions": "Available versions",
+    "selectVersion": "Select Version",
+    "latest": "Latest",
+    "conflictWarning": "This library has conflicts with other selected libraries",
+    "incompatibleError": "This library is incompatible with one or more selected libraries"
+  },
+  "generate": {
+    "title": "Generate Project",
+    "button": "Generate Project",
+    "generating": "Generating..."
+  },
+  "summary": {
+    "title": "Project Summary",
+    "name": "Name",
+    "python": "Python",
+    "robotFramework": "Robot Framework",
+    "libraries": "Libraries"
+  }
+}
