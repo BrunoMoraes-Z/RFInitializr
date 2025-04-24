@@ -14,8 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: actions/setup-yarn
-
       - name: Set Node.js 22.x
         uses: actions/setup-node@v3
         with:
