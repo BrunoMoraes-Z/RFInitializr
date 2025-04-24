@@ -1,4 +1,4 @@
-name: Deploy static content to Pages
+name: Build - Vite
 
 on:
   workflow_dispatch:
@@ -6,20 +6,11 @@ on:
     branches:
       - main
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: 'pages'
-  cancel-in-progress: true
-
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
+    name: Build Web
+    env:
+      my_secret: ${{secrets.GH_TOKEN}}
 
     runs-on: ubuntu-latest
     steps:
@@ -40,14 +31,15 @@ jobs:
         with:
           cmd: build
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      - run: |
+          cd dist
+          git init
+          git config --global user.email ${{vars.EMAIL}}
+          git config --global user.name ${{vars.USERNAME}}
+          git status
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './dist'
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          git remote add origin https://${{secrets.GH_TOKEN}}@${{vars.REPO_URL}}
+          git checkout -b gh-pages
+          git add --all
+          git commit -m "update"
+          git push origin gh-pages -f
